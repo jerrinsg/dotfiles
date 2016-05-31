@@ -110,6 +110,8 @@ set undoreload=10000        " number of lines to save for undo
 " autocmd CursorMovedI * silent! TlistHighlightTag
 autocmd CursorMoved * silent! TlistHighlightTag
 
+" Always split on the right hand side
+set splitright
 
 " Highlight word; do not jump
 nnoremap * :keepjumps normal! mi*`i<CR>
