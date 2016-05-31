@@ -39,9 +39,12 @@ set backspace=eol,start,indent          " allow backspacing over indent, eol, & 
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 " end highlight
+" press return to temporarily get out of the highlighted search.
+:nnoremap <CR> :nohlsearch<CR><CR>
 
 " Pressing F8 will highlight all occurrences of the current word:
-:nnoremap <F8> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
+":nnoremap <F8> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
+" This can be achieved by pressing * key
 
 " Hide code by folding it based on {} blocks
 " set foldmethod=syntax
