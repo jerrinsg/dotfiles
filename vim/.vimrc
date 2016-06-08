@@ -127,3 +127,5 @@ map <F3> :source ~/.vim/vim_session <cr>     " And load session with F3
 "  %    :  saves and restores the buffer list
 "  n... :  where to save the viminfo files
 " set viminfo='100,\"100,:500,%,n~/.viminfo
+
+autocmd SwapExists * let v:swapchoice = "o"
